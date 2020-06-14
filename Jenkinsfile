@@ -2,6 +2,7 @@
 pipeline {
 //	agent any
 	agent { 
+		node { label 'myDocker'}
 		docker {
 			 image 'maven:3.6.3'
 			 label 'myDocker'
