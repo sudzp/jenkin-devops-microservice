@@ -2,8 +2,12 @@
 pipeline {
 //	agent any
 	agent {
-        docker { image 'node:7-alpine' }
-    }
+  		label 'dockerNode'
+	}
+
+	// agent {
+    //     docker { image 'node:7-alpine' }
+    // }
 
 	stages {
 		stage("Build"){
