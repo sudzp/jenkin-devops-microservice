@@ -1,11 +1,11 @@
 //DECLARATIVE PIPELINE
 pipeline {
 
-	agent any
+	//agent any
 
-	// agent {
-    //     docker { image 'node:7-alpine' }
-    // }
+	 agent {
+         docker { image 'node:7-alpine' }
+     }
 
 	stages {
 		stage("Build"){
